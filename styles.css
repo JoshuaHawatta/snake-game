@@ -25,3 +25,9 @@ body {
 .points {
     color: #FFFFFF;
 }
+
+@media screen and (max-width: 380px) {
+    #snake-canvas {
+        height: 100vh;
+    }
+}
