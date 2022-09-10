@@ -65,6 +65,27 @@ export default class Snake {
                 this.#Y_VELOCITY = -1;
             }
         })
+
+        window.addEventListener('touchend', e => {
+            e.preventDefault();
+
+            if (e.key === "a" || e.key === "ArrowLeft") {
+                this.#X_VELOCITY = -1;
+                this.#Y_VELOCITY = 0;
+            }
+            else if (e.key === "d" || e.key === "ArrowRight") {
+                this.#X_VELOCITY = 1;
+                this.#Y_VELOCITY = 0;
+            }
+            else if (e.key === "s" || e.key === "ArrowDown") {
+                this.#X_VELOCITY = 0;
+                this.#Y_VELOCITY = 1;
+            }
+            else if (e.key === "w" || e.key === "ArrowUp") {
+                this.#X_VELOCITY = 0;
+                this.#Y_VELOCITY = -1;
+            }
+        })
     }
 
     INCREMENT_X_VELOCITY = () => this.#X_ANGLE += (this.#X_VELOCITY * this.#size);
