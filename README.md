@@ -17,3 +17,8 @@
 * LocalStorage
 * HTML
 * CSS
+<br />
+
+<a href="https://snak3-game.netlify.app/" target="_blank" rel="noreferrer">
+  <img width="200" src="https://img.shields.io/badge/Try it Yourself!-blue?style=for-the-badge" />
+</a>
